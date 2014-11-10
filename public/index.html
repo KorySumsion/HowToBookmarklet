@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<Title> My Bookmarklet </Title>
+
+</head>
+
+<body>
+	<h2> Drag the link to your toolbar! </h2>
+
+	<h4><a href="javascript: alert('Hello World');">MyBookmarklet</a></h4>
+
+	<a href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://localhost:8888/myBookmarklet.js';})();">Externalized Bookmarklet</a>
+</body>
+</html>

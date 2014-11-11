@@ -13,17 +13,19 @@
 				initMyBookmarklet();
 			}
 		};
-		//tried changing to body instead of head based on stack overflow recommendation that it would run before the body finished . . 
+		//the code originally appended the script to the head, appended to body instead of head based on stack overflow recommendation that it would run before the body finished . . 
 		document.getElementsByTagName("body")[0].appendChild(script);
 	} else {
 		initMyBookmarklet();
 	}
-	
-	alert('hello world');
+	function initMyBookmarklet(){
+		alert('hello world');
 
-	var p = document.createElement("h1");
-	var text = document.createTextNode("hello there, thanks for using me")
-	p.appendChild(text)
-	document.getElementsByTagName("body")[0].appendChild(p)
+		//can't do this on https- CORS blocks it
+		var p = document.createElement("h1");
+		var text = document.createTextNode("Hello there DevMountain student, thanks for using me")
+		p.appendChild(text)
+		document.getElementsByTagName("body")[0].appendChild(p)
+	}
 
 })();

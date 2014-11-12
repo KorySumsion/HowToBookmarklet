@@ -11,11 +11,11 @@ Lesson for DevMountain
 
 ##What is a Bookmarklet?
 
-A bookmarklet is javascript written in link form that you can run on other people's websites.
+* A bookmarklet is javascript written in link form that you can run on other people's websites.
 
-Example: The Pinterest Pin button saves information to someone's pinterest board.
+* Example: The Pinterest Pin button saves information to someone's pinterest board.
 
-The script is written in a link that people can add to their toolbar, just like any normal website link.
+* The script is written in a link that people can add to their toolbar, just like any normal website link.
 
 
 
@@ -74,7 +74,7 @@ Go to the index.html, comment out the Hello World bookmarklet and uncomment the 
 ```
 
 
-The script in the <a> tag we uncommented uses basic javascript to append a script tag and our script source (myBookmarklet.js) to the document.body of the current page we are on.  
+The script in the 'a' tag we uncommented uses basic javascript to append a script tag and our script source (myBookmarklet.js) to the document.body of the current page we are on.  
 
 However, that script has to be online somewhere if it is going to get appended, so I have spun up a simple server (server.js) that will serve our script every time we press the button.
 
@@ -115,4 +115,4 @@ var Recipe = {
 
 ```
 
-* Alternatively, create a bookmarklet that creates a widget on the webpage.  Say you want a clock while you are on this page.  You could write code to add the clock for the time you are on the page.  This doesn't actually alter the page that others are seeing. The script is running client side, so only the client using the bookmarklet experiences it.
+* Alternatively, create a bookmarklet that creates a widget on the webpage.  A simple example would be a clock that appears at the top of the page. This doesn't actually alter the page that others are seeing. The script is running client side, so only the client using the bookmarklet experiences it.

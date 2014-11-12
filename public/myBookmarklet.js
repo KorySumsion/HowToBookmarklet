@@ -2,7 +2,7 @@
 
 	var v = "2.1.1";
 
-	// check prior inclusion and version
+	// check prior inclusion and version - technically our code doesn't need this, but it's useful to see.
 	if (window.jQuery === undefined || window.jQuery.fn.jquery < v) {
 		var done = false;
 		var script = document.createElement("script");
